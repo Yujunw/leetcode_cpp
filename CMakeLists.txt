@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(leetcode_cpp main.cpp)
 add_executable(fibonaci others/fibonacci.cpp)
+add_executable(leetcode322 leetcode/leetcode322.cpp)
