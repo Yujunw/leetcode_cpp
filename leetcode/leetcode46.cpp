@@ -71,7 +71,8 @@ public:
             backtrace2(nums, path, used);
             // path中的最后一个数字要被移除，used=false
             used.at(i) = false;
-            // 假设path={1,2,3},3被移除，可以重新选择3，程序回到上一层，撤销2
+            // bt([])，选择1，调用函数bt([1]),继续遍历,调用函数bt([1,2]),继续遍历，调用函数bt([1,2,3]),此时path={1,2,3},函数
+            // 结束，3被移除，可以重新选择3，程序回到上一层bt([1,2])，1，2，3都遍历过了，也结束了，pop掉2，回到bt([1])
             path.pop_back();
             for(int digit:path) {
                 cout << digit << '\t';
