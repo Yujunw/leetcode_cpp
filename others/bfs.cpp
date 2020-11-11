@@ -49,6 +49,7 @@ int bfs(Node start, Node target)
                 }
             }
         }
+        // 未添加新节点之前，队列中的节点都在同一层，必须全部遍历完后才能step++
         step++;
     }
     return step;
