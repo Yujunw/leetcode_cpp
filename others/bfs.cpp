@@ -43,7 +43,7 @@ int bfs(Node start, Node target)
             /* 将 cur 的相邻节点加入队列 */
             vector<Node> adj = {Node(curr.x+1, curr.y), Node(curr.x-1, curr.y), Node(curr.x, curr.y-1),                                         Node(curr.x, curr.y+1)};
             for(Node n : adj) {
-                if (visited.find(n) != visited.end()) {
+                if (visited.find(n) == visited.end()) {
                     q.push(n);
                     visited.insert(n);
                 }
