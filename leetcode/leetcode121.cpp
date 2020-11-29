@@ -20,7 +20,7 @@
     子问题：获取在prices.size() - 1的天数内的最大利润
     定义状态：定义maxProfit为最大利润
     状态转移方程：
-        第i天的最大利润，maxProfit = max(最i-1天的最大利润，在第i天卖出获取得利润）
+        第i天的最大利润，maxProfit = max(第i-1天的最大利润，在第i天卖出获取得利润）
 
  * */
 
@@ -43,6 +43,7 @@ public:
         return maxProfit;
     }
 };
+
 int main() {
     Solution so;
     vector<int> v = {7,6,4,3,1};
