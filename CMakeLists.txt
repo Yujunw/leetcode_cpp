@@ -24,3 +24,5 @@ add_executable(leetcode213 leetcode/leetcode213.cpp)
 add_executable(leetcode337 leetcode/leetcode337.cpp)
 add_executable(leetcode53 leetcode/leetcode53.cpp)
 add_executable(leetcode1143 leetcode/leetcode1143.cpp)
+
+add_executable(leetcode72 leetcode/leetcode72.cpp)
